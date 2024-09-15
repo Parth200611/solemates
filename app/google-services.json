@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "876194000060",
+    "project_id": "solemates-1f09b",
+    "storage_bucket": "solemates-1f09b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876194000060:android:80c19fe816ffc1d96674b9",
+        "android_client_info": {
+          "package_name": "com.example.solemates"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQhsHOrAS-kUl42Q5DrKz3yETkDwiw0eA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/bottomnevigationhomeicon"
+        android:icon="@drawable/baseline_home_24"
+        android:title="HOME"
+        />
+  <item
+        android:id="@+id/bottomnevigationlaunches"
+        android:icon="@drawable/baseline_calendar_today_24"
+        android:title="LAUNCHES"
+        />
+  <item
+        android:id="@+id/bottomnevigationhomecart"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="CART"
+        />
+
+
+</menu>

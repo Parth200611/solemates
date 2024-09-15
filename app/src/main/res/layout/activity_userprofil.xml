@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nevyblue"
+    tools:context=".userprofilActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profil"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:id="@+id/myprofil"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:fontFamily="@font/audiowide"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/myprofil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/civuserprofilprofilimage"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnuserprofileditimage"
+        android:text="Edit Profil"
+        android:textColor="@color/nevyblue"
+        android:backgroundTint="@color/yellow"
+       android:layout_below="@id/civuserprofilprofilimage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnuserprofileditimage"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/nevyblue"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:padding="10dp"
+                android:textColor="@color/nevyblue"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/shape"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/tvuserprofilname"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email ID"
+                android:textColor="@color/nevyblue"
+                android:layout_below="@id/tvuserprofilname"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Id"
+                android:padding="10dp"
+                android:textColor="@color/nevyblue"
+                android:layout_below="@id/tvuserprofilname"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/tvuserprofilemailid"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No"
+                android:textColor="@color/nevyblue"
+                android:layout_below="@id/tvuserprofilemailid"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile NO"
+                android:padding="10dp"
+                android:textColor="@color/nevyblue"
+                android:layout_below="@id/tvuserprofilemailid"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/tvuserprofilmobileno"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/nevyblue"
+                android:layout_below="@id/tvuserprofilmobileno"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:padding="10dp"
+                android:textColor="@color/nevyblue"
+                android:layout_below="@+id/tvuserprofilmobileno"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/tvuserprofilusername"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profil"
+                android:textColor="@color/blue"
+                android:layout_below="@id/tvuserprofilusername"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvuserprofileditprofil"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/baseline_edit_note_24"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvuserprofilusername"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@color/yellow"
+                android:text="Log Out"
+                android:textColor="@color/nevyblue"
+                android:id="@+id/acbtnuserprofillogout"
+                />
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

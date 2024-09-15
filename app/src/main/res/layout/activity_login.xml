@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomrbackg"
+    tools:context=".loginActivity">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/ivloginapplogo"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        />
+
+    <TextView
+        android:id="@+id/tvloginappname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ivloginapplogo"
+        android:fontFamily="@font/audiowide"
+        android:text="solemates"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvloginappname"
+        android:layout_marginTop="60dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvloginwelcome"
+            android:text="Welcome To Solemates !"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adlam_display"
+            android:gravity="center"
+            android:layout_marginTop="26dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvloginmessages"
+                android:text="Discover your perfect pair of shoes today."
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Username, email, phone no"
+                android:background="@drawable/shape"
+                android:padding="10dp"
+                android:inputType="text"
+                android:id="@+id/etloginusername"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Password"
+                android:background="@drawable/shape"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:id="@+id/etloginpassword"
+                android:drawableRight="@drawable/baseline_visibility_off_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvloginforgottenpasswoord"
+                android:text="Forgotten Password?"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#2196F3"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnloginlogin"
+                android:text="Log In"
+                android:background="@color/yellow"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnloginloginwithgoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/common_google_signin_btn_text_dark_normal"
+                android:text="Sign In with Google"
+
+                />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/tvloginneewuser"
+             android:text="Don't have account? | Sign up"
+             android:layout_gravity="center"
+             android:layout_marginTop="12dp"
+             android:textColor="@color/blue"
+             />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By using Solemates,you agree to our Terms and Condition and Policy,any problem contact solemates@gmail.com"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/gravy"
+                android:layout_marginStart="40dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:layout_marginEnd="40dp"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

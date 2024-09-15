@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomepage"
+    tools:context=".welcomepageActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvwelcomewelcometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="510dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="Welcome To Solemates! "
+        android:textColor="@color/yellow"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvwelcomewelcomemessage"
+        android:text="Discover a unique collection where every shoe combines style and comfort. Find the perfect pair that truly matches your vibe. Happy shopping!
+
+
+
+"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-condensed"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnwlcomelogin"
+        android:text="Log IN"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/nevyblue"
+        android:layout_marginStart="216dp"
+        android:layout_below="@+id/tvwelcomewelcomemessage"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+</RelativeLayout>

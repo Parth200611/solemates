@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nevyblue"
+    tools:context=".loginselectActivity">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ivloginselectionapplogo"
+        android:src="@drawable/logo"
+        android:layout_marginVertical="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="120dp"
+        />
+
+    <TextView
+        android:id="@+id/tvloginselectiontitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="solemates"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvloginselectiontitle"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvloginselectioncustomer"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="8dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/ivloginselectionustomer"
+                    android:src="@drawable/signupcustomer"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvloginseltitle"
+                    android:text="CUSTOMER"
+                    android:textSize="20sp"
+                    android:layout_marginStart="78dp"
+                    android:layout_marginTop="28dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvloginselectiontext"
+                    android:text="Join as a Customer – Dive into a world of shopping! Track orders, explore new products, and enjoy a personalized experience"
+                    android:layout_below="@id/tvloginseltitle"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+ <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvloginselectionshopkeeper"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="8dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/ivloginselectionshopkeeper"
+                    android:src="@drawable/signupshopkeeper"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvloginseltitleshopkeeper"
+                    android:text="SHOPKEEPER"
+                    android:textSize="20sp"
+                    android:layout_marginStart="78dp"
+                    android:layout_marginTop="28dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvloginselectiontextshopkeeper"
+                    android:text="Enter as a Shopkeeper – Take charge of your store! Manage inventory, process sales, and keep your shop running smoothly"
+                    android:layout_below="@id/tvloginseltitleshopkeeper"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvSignupother"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvloginselectionothertitle"
+                    android:text="OTHER"
+                    android:textSize="20sp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="28dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvloginselectionothertext"
+                    android:text="Sign in as Other – For unique roles and special access. Whether you’re an admin or Delivery partner, get the tools you need here"
+                    android:layout_below="@id/tvloginselectionothertitle"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homemenucategary"
+        android:title="Category"
+        android:icon="@drawable/baseline_category_24"
+        /> <item
+        android:id="@+id/homemenumyorder"
+        android:title="My Order"
+        android:icon="@drawable/baseline_category_24"
+        /> <item
+        android:id="@+id/homemenuHistory"
+        android:title="History"
+        android:icon="@drawable/baseline_category_24"
+        />
+    <item
+        android:id="@+id/homemenumyprofil"
+        android:title="My Profil"
+        android:icon="@drawable/baseline_category_24"
+        /><item
+        android:id="@+id/homemenuaboutus"
+        android:title="About us"
+        android:icon="@drawable/baseline_category_24"
+        />
+
+
+</menu>
