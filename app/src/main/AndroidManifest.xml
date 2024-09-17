@@ -16,7 +16,12 @@
         android:theme="@style/Theme.Solemates"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".userusernamecheckforemailupdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".usereditprofilActivity"
+            android:exported="false" />
         <activity
             android:name=".userprofilActivity"
             android:exported="false" />

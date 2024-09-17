@@ -45,8 +45,8 @@ public class userprofilActivity extends AppCompatActivity {
 
     ImageView ivprofilimage;
     Button btneditprofil;
-    TextView tvname,tvemailid,tvmobileno,tvusername;
-    AppCompatButton btnlogout;
+    TextView tvname,tvemailid,tvmobileno,tvusername,tvedit;
+    AppCompatButton btnlogout,btnedit;
     GoogleSignInOptions googleSignInOptions;
     GoogleSignInClient googleSignInClient;
     SharedPreferences preferences;
@@ -71,10 +71,20 @@ public class userprofilActivity extends AppCompatActivity {
        tvmobileno = findViewById(R.id.tvuserprofilmobileno);
        tvusername = findViewById(R.id.tvuserprofilusername);
         btnlogout = findViewById(R.id.acbtnuserprofillogout);
+      btnedit = findViewById(R.id.acbtnuserprofiledit);
 
 
         preferences = PreferenceManager.getDefaultSharedPreferences(userprofilActivity.this);
         strusername = preferences.getString("username","");
+
+
+        btnedit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(userprofilActivity.this,usereditprofilActivity.class);
+                startActivity(i);
+            }
+        });
         
         
         
@@ -159,7 +169,7 @@ public class userprofilActivity extends AppCompatActivity {
                        tvusername.setText(username);
 
                         Glide.with(userprofilActivity.this)
-                                .load("http://192.168.1.2:80/solemateAPI/images/"+strimage)
+                                .load(urls.address+"images/"+strimage)
                                 .skipMemoryCache(true)
                                 .error(R.drawable.noimage)
                                 .downsample(DownsampleStrategy.CENTER_INSIDE) // Scale down image to fit within specified bounds
