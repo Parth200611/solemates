@@ -11,13 +11,12 @@
   <item
         android:id="@+id/bottomnevigationlaunches"
         android:icon="@drawable/baseline_calendar_today_24"
-        android:title="LAUNCHES"
+        android:title="CATEGORY"
         />
   <item
         android:id="@+id/bottomnevigationhomecart"
         android:icon="@drawable/baseline_shopping_cart_24"
         android:title="CART"
         />
-
 
 </menu>

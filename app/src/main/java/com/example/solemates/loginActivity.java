@@ -6,8 +6,12 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -47,6 +51,7 @@ public class loginActivity extends AppCompatActivity {
     GoogleSignInClient googleSignInClient;
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
+    CheckBox chshowpassword;
 
 Boolean passwordVisible;
 
@@ -71,6 +76,7 @@ Networkchangelistner networkchangelistner = new Networkchangelistner();
         etpassword=findViewById(R.id.etloginpassword);
         btnlogin=findViewById(R.id.btnloginlogin);
         btngooglesignin = findViewById(R.id.btnloginloginwithgoogle);
+        chshowpassword = findViewById(R.id.cbuserloginshowpasswortd);
 
         googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         googleSignInClient = GoogleSignIn.getClient(loginActivity.this,googleSignInOptions);
@@ -112,6 +118,17 @@ Networkchangelistner networkchangelistner = new Networkchangelistner();
             public void onClick(View v) {
                 Intent i = new Intent(loginActivity.this,forgottenpasswordnumberActivity.class);
                 startActivity(i);
+            }
+        });
+
+        chshowpassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                    etpassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }else{
+                    etpassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
             }
         });
 

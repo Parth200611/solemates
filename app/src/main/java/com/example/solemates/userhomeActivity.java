@@ -7,16 +7,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.fragment.app.FragmentManager;
 
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class userhomeActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -62,7 +56,7 @@ public class userhomeActivity extends AppCompatActivity implements BottomNavigat
     }
 
     homeFragment homeFragment = new homeFragment();
-    launchesFragment launchesFragment = new launchesFragment();
+    CategoryFragment launchesFragment = new CategoryFragment();
     cartFragment cartFragment = new cartFragment();
 
 

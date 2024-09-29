@@ -25,6 +25,7 @@ public class welcomepageActivity extends AppCompatActivity {
         getWindow().setNavigationBarColor(ContextCompat.getColor(welcomepageActivity.this,R.color.nevyblue));
         getWindow().setStatusBarColor(ContextCompat.getColor(welcomepageActivity.this,R.color.nevyblue));
 
+
         tvwelcometext=findViewById(R.id.tvwelcomewelcometext);
         tvwelcomemessage=findViewById(R.id.tvwelcomewelcomemessage);
         btnlogin=findViewById(R.id.btnwlcomelogin);

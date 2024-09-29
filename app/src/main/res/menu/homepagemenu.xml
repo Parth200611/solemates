@@ -22,6 +22,10 @@
         android:id="@+id/homemenuaboutus"
         android:title="About us"
         android:icon="@drawable/baseline_category_24"
+        /><item
+        android:id="@+id/homemenuchatbot"
+        android:title="Chat Bot"
+        android:icon="@drawable/baseline_category_24"
         />
 
 
