@@ -14,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy;
 import com.example.solemates.comman.urls;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -30,7 +32,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class GetcategorywiseproductActivity extends AppCompatActivity {
 
-    SearchView searchView;
+    //SearchView searchView;
     ListView lvcategoryproductlist;
     TextView tvnocategory;
     String strgetcategoryname;
@@ -44,7 +46,7 @@ public class GetcategorywiseproductActivity extends AppCompatActivity {
         setContentView(R.layout.activity_getcategorywiseproduct);
         getWindow().setStatusBarColor(ContextCompat.getColor(GetcategorywiseproductActivity.this,R.color.nevyblue));
 
-        searchView =findViewById(R.id.svGetcategoryfragmentsearchView);
+      //  searchView =findViewById(R.id.svGetcategoryfragmentsearchView);
         lvcategoryproductlist = findViewById(R.id.lvGetcategorywiseproductlist);
         tvnocategory =findViewById(R.id.tvGetcategorywiseTextnocategory);
         pojoGetCategoryWiseProducts = new ArrayList<>();

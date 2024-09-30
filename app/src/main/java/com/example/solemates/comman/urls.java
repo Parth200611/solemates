@@ -1,6 +1,6 @@
 package com.example.solemates.comman;
 public class urls {
-    public static String address="http://192.168.1.2:80/solemateAPI/";
+    public static String address="http://192.168.1.5:80/solemateAPI/";
     public static String loginactivity=address+"userregisterdetailsforlogin.php";
     public static String registrationactivity=address+"userregisterdetails.php";
     public static String forgottenpasswordactivity=address+"updatepassword.php";
